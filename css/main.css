@@ -1,2 +1,6 @@
 @import "dark.css" (prefers-color-scheme: dark);
 @import "light.css" (prefers-color-scheme: light);
+
+@media only screen and (min-width: 1080px) {
+    h1, h2, h3, p, li { margin-left: 25%; margin-right: 25% }
+}
