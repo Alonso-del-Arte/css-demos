@@ -9,10 +9,18 @@
 item bullets can be changed independently of the list item text they precede, 
 using CSS." />
         <meta name="author" content="Alonso del Arte" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
         <style type="text/css">
-            ul li::marker { color: red }
-            ul li { color: green }
-            ol li::marker { color: green }
+            @media (prefers-color-scheme: dark) {
+                ul li::marker { color: lightcoral }
+                ul li { color: lightgreen }
+                ol li::marker { color: lawngreen }
+            }
+            @media (prefers-color-scheme: light) {
+                ul li::marker { color: red }
+                ul li { color: green }
+                ol li::marker { color: green }
+            }
         </style>
     </head>
     <body>
