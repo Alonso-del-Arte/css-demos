@@ -9,6 +9,11 @@
 item bullets can be changed independently of the list item text they precede, 
 using CSS." />
         <meta name="author" content="Alonso del Arte" />
+        <style type="text/css">
+            ul li::marker { color: red }
+            ul li { color: green }
+            ol li::marker { color: green }
+        </style>
     </head>
     <body>
         <h1>List Item Bullet Color Demo</h1>
@@ -27,8 +32,11 @@ always have to be the case, at least not in modern browsers.</p>
             <li>Blitzen</li>
             <li>Rudolph</li>
         </ul>
-        <p>Does this also work with ordered lists? Let's try it with the list of 
-General MIDI instruments in the piano category.</p>
+        <h2>Changing the color of numbers in an ordered list</h2>
+        <p>Just as we can change the color of list item bullets in an unordered 
+list, so too can we change the color of list item numbers in an ordered list.</p>
+        <p>For this next example, I'm using the first eight instruments of the 
+General MIDI standard.</p>
         <ol>
             <li>Acoustic grand piano</li>
             <li>Bright acoustic piano</li>
