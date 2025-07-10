@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>List Item Bullet Color Demo</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Demonstration of how the color and 
+font of list item numbers can be changed independently of the list item text 
+they precede, using CSS." />
+        <meta name="author" content="Alonso del Arte" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <style type="text/css">
+            li::marker { font-family: cursive; font-style: italic; 
+                font-weight: bold; text-decoration: underline }
+            @media (prefers-color-scheme: dark) {
+                li::marker { color: lawngreen; text-shadow: 5px 5px 5px lightblue }
+            }
+            @media (prefers-color-scheme: light) {
+                li::marker { color: green; text-shadow: 5px 5px 5px blue }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>List Item Number Style Demo</h1>
+        <p>Normally, when we declare an ordered list in HTML, the list item 
+numbers are the same color as the list item text they precede. But this doesn't 
+always have to be the case, at least not in modern browsers.</p>
+        <p>With CSS, we can do a lot more formatting of the list item numbers 
+than we can do for the list item bullets in unordered lists.</p>
+        <p>Consider for example the list of musical instruments in the General 
+MIDI standard.</p>
+        <ol>
+            <li>Acoustic grand piano</li>
+            <li>Bright acoustic piano</li>
+            <li>Electric grand piano</li>
+            <li>Honky-tonk piano</li>
+            <li>Electric piano 1</li>
+            <li>Electric piano 2</li>
+            <li>Harpsichord</li>
+            <li>Clavinet</li>
+            <li>etc.</li>
+        </ol>
+        <p><a href="index.html">Back to index</a></p>
+    </body>
+</html>
