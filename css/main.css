@@ -2,8 +2,8 @@
 @import "light.css" (prefers-color-scheme: light);
 
 a { text-decoration: none }
-a:hover { text-decoration: underline }
-a:active { font-weight: bold }
+a:hover { text-decoration: underline; font-weight: bold }
+a:active { font-weight: bolder }
 
 @media only screen and (min-width: 1080px) {
     h1, h2, h3, p, li { margin-left: 25%; margin-right: 25% }
